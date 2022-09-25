@@ -1,0 +1,47 @@
+repos:
+  - repo: https://github.com/pre-commit/pre-commit-hooks
+    rev: v4.0.1
+    hooks:
+      - id: check-docstring-first
+      - id: end-of-file-fixer
+      - id: trailing-whitespace
+      - id: mixed-line-ending
+      - id: check-merge-conflict
+      - id: check-case-conflict
+      - id: check-json
+      - id: check-yaml
+        args: [--allow-multiple-documents]
+        exclude: helm
+      - id: check-toml
+      - id: sort-simple-yaml
+  - repo: https://github.com/asottile/setup-cfg-fmt
+    rev: v1.17.0
+    hooks:
+      - id: setup-cfg-fmt
+  - repo: https://github.com/pycqa/isort
+    rev: 5.10.1
+    hooks:
+      - id: isort
+        name: isort (python)
+        args: ['--profile', 'black']
+  - repo: https://github.com/psf/black
+    rev: 22.3.0
+    hooks:
+      - id: black
+        language_version: python3.10
+        args: ['--target-version', 'py310']
+  - repo: https://github.com/fsouza/autoflake8
+    rev: v0.3.2
+    hooks:
+      - id: autoflake8
+        args: ['--in-place', '--remove-unused-variables']
+  - repo: https://gitlab.com/pycqa/flake8
+    rev: 3.7.9
+    hooks:
+      - id: flake8
+        args: ['--exclude', '.venv']
+  - repo: https://github.com/asottile/pyupgrade
+    rev: v2.19.0
+    hooks:
+      - id: pyupgrade
+        args: [--py37-plus]
