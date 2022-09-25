@@ -1,6 +1,6 @@
 from dataclasses import dataclass
-from typing import Optional
 from time import time
+from typing import Optional
 
 
 @dataclass

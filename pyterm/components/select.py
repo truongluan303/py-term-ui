@@ -1,7 +1,6 @@
 import curses
-from typing import Any, Generic, List, Optional, Sequence, Tuple, TypeVar, Union
-
 from dataclasses import dataclass, field
+from typing import Any, Generic, List, Optional, Sequence, Tuple, TypeVar, Union
 
 __all__ = ["select_prompt", "Option"]
 
