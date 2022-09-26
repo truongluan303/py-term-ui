@@ -39,7 +39,7 @@ Sample usage:
 from pyterm.components import AsciiImage
 
 # Note: The bigger the width is, the more accurate the ascii image.
-# But also, make sure that the image's width is smaller than the terminal's width.
+# But also make sure that the image's width is smaller than the terminal's width.
 ascii_img = AsciiImage("cap.jpg", 100)
 ascii_img.print()
 
@@ -53,7 +53,6 @@ img_str = str(ascii_img)
 Output:
 
 ```
-(.venv) PS C:\Users\hoang\Desktop\Workspace\py-term-ui> python .\demo.py
 #############$$$$$$$$$$$$$$$$$$$$$$$%+::++x;::::;;;;;;+++x%$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
 $$$###$######$$$$$$$$$$$$##$$$$$$$#x;::++;x+::;;;;;;++++x??%$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$@@@@@$$
 $$$$$$$$$$$$###$$$$$$$$$$$###$$$$$x;;:;;;;+x;:;++x++xx+xxxx+%$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$@@@@$
