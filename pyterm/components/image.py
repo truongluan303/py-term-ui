@@ -2,7 +2,7 @@ from typing import Optional
 
 from PIL import Image as PILImg
 
-_ASCII_CHARS = ["@", "$", "#", "%", "?", "x", "+", ";", ":", ",", "."]
+_ASCII_CHARS = [" ", ".", ":", ";", "+", "x", "?", "%", "#", "$", "@"]
 
 
 class AsciiImage:
